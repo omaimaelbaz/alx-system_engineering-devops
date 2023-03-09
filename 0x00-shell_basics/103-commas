@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -m -F -v | sed 's/, $//g' | awk '{printf("%s%s",sep,$0); sep=","} END{print ""}'
+ls -m > files.csv
