@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -afp | sed -e 's/[^[:alnum:]./]/,/g' -e 's|/$|/,|g' | tr -s ',' | sed 's/,$/\n/'
