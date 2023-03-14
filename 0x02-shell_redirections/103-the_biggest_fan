@@ -1,0 +1,2 @@
+#!/bin/bash
+tail -n +2 access.log | cut -f1 | sort | uniq -c | sort -rn | head -n 11
